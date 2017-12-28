@@ -41,14 +41,14 @@ if (temperatura < 28){
   digitalWrite(led_vm,LOW);
 }
 
-else if (temperatura > 28 && temperatura < 30){
+else if (temperatura >= 28 && temperatura < 30){
   noTone(buzina);   //não liga buzina
   digitalWrite(led_am,HIGH);
   digitalWrite(led_vm,LOW);
   digitalWrite(led_vd,LOW);
   }
 
-  if (temperatura > 30) {
+  if (temperatura >= 30) {
     
   tone (buzina,1000);   //liga buzina somente quando estier vermelho
   digitalWrite(led_vm,HIGH);
